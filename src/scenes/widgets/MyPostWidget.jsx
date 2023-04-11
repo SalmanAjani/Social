@@ -161,6 +161,11 @@ const MyPostWidget = ({ picturePath }) => {
             color: palette.background.alt,
             backgroundColor: palette.primary.main,
             borderRadius: "3rem",
+            "&:hover": {
+              cursor: "pointer",
+              backgroundColor: "#044a42",
+              color: "white",
+            },
           }}
         >
           POST
