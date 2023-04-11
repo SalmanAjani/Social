@@ -43,6 +43,7 @@ const UserWidget = ({ userId, picturePath = "p4.jpeg" }) => {
 
   const {
     firstName,
+    lastName,
     location,
     occupation,
     viewedProfile,
@@ -72,7 +73,8 @@ const UserWidget = ({ userId, picturePath = "p4.jpeg" }) => {
                 },
               }}
             >
-              {firstName.charAt(0).toUpperCase() + user.firstName.slice(1)}
+              {firstName.charAt(0).toUpperCase() + user.firstName.slice(1)}{" "}
+              {lastName.charAt(0).toUpperCase() + user.lastName.slice(1)}
             </Typography>
             <Typography color={medium}>{friends.length} Friends</Typography>
           </Box>

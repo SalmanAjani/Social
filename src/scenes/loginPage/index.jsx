@@ -25,9 +25,15 @@ const LoginPage = () => {
         borderRadius="1.5rem"
         backgroundColor={theme.palette.background.alt}
       >
-        <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
+        <Typography fontWeight="500" variant="h4" sx={{ mb: "1rem" }}>
           Welcome to Social!
         </Typography>
+        <Typography fontWeight="300" variant="h5" sx={{ mb: "1rem" }}>
+          Test Account :- <br />
+          Email: test100@mail.com <br />
+          Password: test100
+        </Typography>
+
         <Form />
       </Box>
     </Box>
