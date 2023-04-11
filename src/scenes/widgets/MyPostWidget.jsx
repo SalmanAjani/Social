@@ -46,14 +46,11 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picturePath", "post4.jpeg");
     }
 
-    const response = await fetch(
-      `https://azure-cape-buffalo-cuff.cyclic.app/posts`,
-      {
-        method: "POST",
-        headers: { Authorization: `Bearer ${token}` },
-        body: formData,
-      }
-    );
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/posts`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      body: formData,
+    });
     const posts = await response.json();
     dispatch(setPosts({ posts }));
     setImage(null);

@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://azure-cape-buffalo-cuff.cyclic.app/users/${_id}/${friendId}`,
+      `${process.env.REACT_APP_SERVER_URL}/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

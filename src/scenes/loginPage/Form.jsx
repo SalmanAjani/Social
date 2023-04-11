@@ -58,7 +58,7 @@ const Form = () => {
     }
 
     const savedUserResponse = await fetch(
-      "https://azure-cape-buffalo-cuff.cyclic.app/auth/register",
+      `${process.env.REACT_APP_SERVER_URL}/auth/register`,
       {
         method: "POST",
         body: formData,
@@ -74,7 +74,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://azure-cape-buffalo-cuff.cyclic.app/auth/login",
+      `${process.env.REACT_APP_SERVER_URL}/auth/login`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

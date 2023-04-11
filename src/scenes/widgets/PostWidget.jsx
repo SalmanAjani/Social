@@ -36,7 +36,7 @@ const PostWidget = ({
 
   const patchLike = async () => {
     const response = await fetch(
-      `https://azure-cape-buffalo-cuff.cyclic.app/posts/${postId}/like`,
+      `${process.env.REACT_APP_SERVER_URL}/posts/${postId}/like`,
       {
         method: "PATCH",
         headers: {
@@ -67,7 +67,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`https://azure-cape-buffalo-cuff.cyclic.app/assets/${picturePath}`}
+          src={`${process.env.REACT_APP_SERVER_URL}/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">

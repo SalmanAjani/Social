@@ -23,7 +23,7 @@ const UserWidget = ({ userId, picturePath = "p4.jpeg" }) => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://azure-cape-buffalo-cuff.cyclic.app/users/${userId}`,
+      `${process.env.REACT_APP_SERVER_URL}/users/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
