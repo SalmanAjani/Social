@@ -42,15 +42,18 @@ const MyPostWidget = ({ picturePath }) => {
     formData.append("userId", _id);
     formData.append("description", post);
     if (image) {
-      formData.append("picture", image);
-      formData.append("picturePath", image.name);
+      formData.append("picture", "post4.jpeg");
+      formData.append("picturePath", "post4.jpeg");
     }
 
-    const response = await fetch(`http://localhost:3001/posts`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${token}` },
-      body: formData,
-    });
+    const response = await fetch(
+      `https://azure-cape-buffalo-cuff.cyclic.app/posts`,
+      {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+        body: formData,
+      }
+    );
     const posts = await response.json();
     dispatch(setPosts({ posts }));
     setImage(null);
@@ -95,13 +98,13 @@ const MyPostWidget = ({ picturePath }) => {
                   sx={{ "&:hover": { cursor: "pointer" } }}
                 >
                   <input {...getInputProps()} />
-                  {!image ? (
-                    <p>Add Image Here</p>
-                  ) : (
+                  {image ? (
                     <FlexBetween>
                       <Typography>{image.name}</Typography>
                       <EditOutlined />
                     </FlexBetween>
+                  ) : (
+                    <p>Add Image Here</p>
                   )}
                 </Box>
                 {image && (
