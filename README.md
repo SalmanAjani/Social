@@ -6,6 +6,12 @@
 <h2>Purpose</h2>
 <p>The objective of this project is to create a scalable social media app that is fully responsive and has multiple features while being connected effectively with database.</p>
 
+<h2>Links</h2>
+<ul>
+<li>Client - <a href="https://social-100-mern.netlify.app/">Netlify</a></li>
+<li>Server - <a href="https://azure-cape-buffalo-cuff.cyclic.app/">Cyclic</a></li>
+</ul>
+
 <h2>Tech Stack</h2>
 <h3>Client:</h3>   
 <ul>
