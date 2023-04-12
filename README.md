@@ -3,6 +3,9 @@
 <h2>Description</h2>
 <p>Social is a social media app where users can post what's on their mind and interact with other users. They can see the posts created by other users and like those posts. If they wish to add friends or update their profiles they can do so as well.</p>
 
+<h2>Purpose</h2>
+<p>The objective of this project is to create a scalable social media app that is fully responsive and has multiple features while being connected effectively with database.</p>
+
 <h2>Tech Stack</h2>
 <h3>Client:</h3>   
 <ul>
