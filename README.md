@@ -25,6 +25,7 @@
 <li>User profile page can be accessed</li>
 <li>User can interact with posts created by other users or create a post of their own</li>
 <li>User can add and remove friends</li>
+<li>Switch between light and dark mode</li>
 </ul>
 
 <h2>Screenshots</h2>
