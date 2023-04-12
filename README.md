@@ -9,7 +9,7 @@
 <h2>Links</h2>
 <ul>
 <li>Client - <a href="https://social-100-mern.netlify.app/">Netlify</a></li>
-<li>Server - <a href="https://azure-cape-buffalo-cuff.cyclic.app/">Cyclic</a></li>
+<li>Server (Accessible only after registering) - <a href="https://azure-cape-buffalo-cuff.cyclic.app/posts">Cyclic</a></li>
 </ul>
 
 <h2>Tech Stack</h2>
